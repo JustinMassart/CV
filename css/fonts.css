@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*FONTS*/
+
+@font-face {
+    font-family: "Populaire";
+    src: url("../fonts/Populaire.woff") format("woff");
+    src: url("../fonts/Populaire.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "ArcherPro Medium";
+    src: url("../fonts/ArcherPro-Medium.woff") format("woff");
+    src: url("../fonts/ArcherPro-Medium.otf") format("otf");
+}
+
+@font-face {
+    font-family: "ArcherPro MediumIta";
+    src: url("../fonts/ArcherPro-MediumIta.woff") format("woff");
+    src: url("../fonts/ArcherPro-MediumIta.otf") format("otf");
+}
+
+@font-face {
+    font-family: "ArcherPro Bold";
+    src: url("../fonts/ArcherPro-Bold.woff") format("woff");
+    src: url("../fonts/ArcherPro-Bold.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Another Shabby";
+    src: url("../fonts/Anothershabby.woff") format("woff");
+    src: url("../fonts/Anothershabby.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "BlockGothicRR";
+    src: url("../fonts/Block-Gothic-RR-Bold-Cond.woff") format("woff");
+    src: url("../fonts/Block-Gothic-RR-Bold-Cond.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Garamond Bold";
+    src: url("../fonts/Garamond-Bold.woff") format("woff");
+    src: url("../fonts/Garamond-Bold.ttf") format("ttf");
+}
+
+/*FIN FONTS*/
