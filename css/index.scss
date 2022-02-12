@@ -4,9 +4,8 @@ body {
 
 main {
   background-color: red;
-}
-main__pictures {
-  background-color: blue;
-}
 
-/*# sourceMappingURL=index.css.map */
+  &__pictures {
+    background-color: blue;
+  }
+}
