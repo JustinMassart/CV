@@ -2,4 +2,13 @@ body {
   background-color: rgba(172, 80, 3, 0.51);
 }
 
+.hd_link {
+  width: 30px;
+  height: 30px;
+}
+
+.card__logo_svg, .card__logo {
+  max-width: 144px;
+}
+
 /*# sourceMappingURL=index.css.map */
