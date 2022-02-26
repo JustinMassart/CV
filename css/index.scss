@@ -1,5 +1,38 @@
+/* VARIABLES */
+
+$assetsRed: #C23732;
+$darkOrange: #50352A;
+$white: #FFF;
+$bgOrange: #ad5106;
+
+/* FIN VARIABLES */
+
+// FONTS
+
+.pop {
+  font-family: Populaire, serif;
+}
+
+.archer {
+  font-family: ArcherPro, serif;
+}
+
+.shabby {
+  font-family: Another Shabby, sans-serif;
+}
+
+.BGRR {
+  font-family: BlockGothicRR, serif;
+}
+
+// MOBILE
+
+img {
+  max-width: 37.4375em;
+}
+
 body {
-  background-color: rgba(172, 80, 3, 0.51);
+  width: 100vw;
 }
 
 .hd_link, .ft_link {
@@ -7,7 +40,57 @@ body {
   height: 30px;
 }
 
-.card__logo_svg, .card__logo {
-  max-width: 144px;
+.background-wrapper {
+  display: flex;
+  position: absolute;
+  width: 599px;
+  height: 600px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url('../images/img/background-bad0d796cd.jpg') no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
 
+// HEADER
+
+.header {
+  &__links {
+    display: none;
+  }
+}
+
+.nav {
+  &__links, &__nailsTop, &__nailsBottom {
+    display: none;
+  }
+  &__name {
+    display: flex;
+    width: 100vw;
+    padding: 1.125em 0;
+    margin-bottom: 2.5em;
+    justify-content: center;
+    font-family: Garamond, sans-serif;
+    font-weight: bold;
+    color: $darkOrange;
+    text-transform: uppercase;
+    font-size: 16px;
+    background: url('../images/img/background-6bf1060436.png') -1px 100% no-repeat;
+  }
+}
+
+// SECTION infos
+
+.infos {
+  &__pictures {
+    max-width: 12.9375em;
+    background-color: transparent;
+    margin: 0 auto;
+  }
+  &__pictures__popup {
+    display: none;
+  }
+  &__history {
+    background-color: $bgOrange;
+  }
 }
