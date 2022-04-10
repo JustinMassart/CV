@@ -195,7 +195,7 @@
                 <path d="M22.4 10.4c-.6-.7-1.6-.9-3.7-.9h-7.4c-2.1 0-3.2.3-3.7 1-.6.7-.6 1.7-.6 3.1v2.7c0 2.8.7 4.1 4.3 4.1h7.4c1.8 0 2.7-.2 3.4-.8.6-.6.9-1.6.9-3.3v-2.7c0-1.5 0-2.5-.6-3.2zm-5.1 5l-3.4 1.7c-.1 0-.2.1-.2.1-.1 0-.2 0-.3-.1-.2-.1-.2-.3-.2-.4v-3.4c0-.2.1-.3.2-.4.2-.1.3-.1.5 0l3.4 1.7c.2.1.3.3.3.4-.1.1-.2.3-.3.4z" />
             </symbol>
         </svg>
-        <div class="background-wrapper"></div>
+        <div class="background-wrapper-landscape"></div>
         <header class="header" id="header">
             <div class="header__links links">
                 Voici mes réseaux
@@ -281,55 +281,78 @@
                             <use xlink:href="#bent-arrow"></use>
                         </svg>
                     </div>
-                    <div class="infos__pictures__popup__img">
-                        <img src="./images/Moi.png" srcset="./images/Moi.png"
-                             alt="Image de Justin Massart se tenant debout avec un ordinateur dans les mains."
-                             height="567">
-                    </div>
-                </div>
-                <div class="infos__history">
-                    <span class="infos__nationality archer">Belge</span>
-                    <h2 class="infos__history__title pop">Web worker</h2>
-                    <p class="archer">Nouveau dans le domaine du Web, je viens de loin ! Étant passionné par les sciences, j’étais
-                                      d’abord en Biochimie avant de me convertir au Web. Un changement de voie que qui me va à
-                                      merveille ! J’aime le côté attirant et indépendant du Web. J’ai étudié à la Haute École de la
-                                      province de Liège pour avoir tout le package nécessaire afin faire les meilleurs sites possible !
-                                      J'espère travailler en tant qu'employé quelques années et pourquoi pas me lancer en tant
-                                      qu'indépendant une fois l'expérience acquise ! Je suis cependant entre deux choix d'orientation
-                                      pour mon futur, Développement d'application ou Front-end developer…</p>
-                </div>
-                <div class="infos__table" id="personality">
-                    <div class="nav__nailsTop">
-                        <img src="./images/img/nail-5aaad23142.png" srcset="./images/img/nail-5aaad23142.png" alt="Image représentant un clou planté." width="14"
-                             height="16">
-                        <img src="./images/img/nail-5aaad23142.png" srcset="./images/img/nail-5aaad23142.png" alt="Image représentant un clou planté." width="14"
-                             height="16">
-                    </div>
-                    <h2 class="infos__table__title hidden shabby">Mon caractère</h2>
-                    <div class="infos__table__stats">
-                        <span class="shabby lineR">Caractère</span>
-                        <ul class="infos__table__stats__stat qualities archer">
-                            <li class="qualities__quality">Curieux</li>
-                            <li class="qualities__quality">Sérieux</li>
-                            <li class="qualities__quality">Motivation</li>
-                            <li class="qualities__quality">Autonome</li>
-                        </ul>
-                    </div>
-                    <div class="infos__table__reasons">
-                        <span class="shabby lineR">3 raisons de m'engager</span>
-                        <div class="infos__table__reasons__list">
-                            <ul class="list archer">
-                                <li class="list__item">Je ne lâche rien, peu importe le problème !</li>
-                                <li class="list__item">Je travaille sans compter !</li>
-                                <li class="list__item">Je suis très curieux d'apprendre</li>
-                            </ul>
+                    <div class="infos__pictures__panel">
+                        <span class="infos__pictures__panel__nationality BGRR">Belge</span>
+                        <div class="infos__pictures__img">
+                            <img src="./images/Moi.png" srcset="./images/Moi.png"
+                                 alt="Image de Justin Massart se tenant debout avec un ordinateur dans les mains.">
                         </div>
                     </div>
-                    <div class="nav__nailsBottom">
-                        <img src="./images/img/nail-5aaad23142.png" srcset="./images/img/nail-5aaad23142.png" alt="Image représentant un clou planté." width="14"
-                             height="16">
-                        <img src="./images/img/nail-5aaad23142.png" srcset="./images/img/nail-5aaad23142.png" alt="Image représentant un clou planté." width="14"
-                             height="16">
+                </div>
+                <div class="infos__historyBG"></div>
+                <div class="infos__history">
+                    <h2 class="infos__history__title pop">Web worker</h2>
+                    <p class="infos__history__desc archerLight">Nouveau dans le domaine du Web, je viens de loin ! Étant passionné par les sciences, j’étais
+                                                                d’abord en Biochimie avant de me convertir au Web. Un changement de voie que qui me va à
+                                                                merveille ! J’aime le côté attirant et indépendant du Web. J’ai étudié à la Haute École de la
+                                                                province de Liège pour avoir tout le package nécessaire afin faire les meilleurs sites possible !
+                                                                J'espère travailler en tant qu'employé quelques années et pourquoi pas me lancer en tant
+                                                                qu'indépendant une fois l'expérience acquise ! Je suis cependant entre deux choix d'orientation
+                                                                pour mon futur, Développement d'application ou Front-end developer…</p>
+                </div>
+                <div class="infos__table" id="personality">
+                    <div class="infos__table__contentWrapper">
+                        <div class="infos__table__nailsTop">
+                            <img src="./images/img/nail-5aaad23142.png" srcset="./images/img/nail-5aaad23142.png" alt="Image représentant un clou planté." width="14"
+                                 height="16">
+                            <img src="./images/img/nail-5aaad23142.png" srcset="./images/img/nail-5aaad23142.png" alt="Image représentant un clou planté." width="14"
+                                 height="16">
+                        </div>
+                        <h2 class="infos__table__title hidden shabby">Mon caractère</h2>
+                        <div class="infos__table__stats">
+                            <span class="shabby lineR">Caractère</span>
+                            <ul class="infos__table__stats__stat qualities archer">
+                                <li class="qualities__quality">Curieux</li>
+                                <li class="qualities__quality">Sérieux</li>
+                                <li class="qualities__quality">Motivation</li>
+                                <li class="qualities__quality">Autonome</li>
+                            </ul>
+                        </div>
+                        <div class="infos__table__reasons">
+                            <span class="shabby lineR">Trois raisons de m'engager</span>
+                            <ul class="infos__table__reasons__list archer">
+                                <li class="infos__table__reasons__list__item item">
+                                    <div class="item__beanies">
+                                        <img class="item__beanies__img" src="./images/img/beanie-894949e20f.png" alt="Image de bonnet de Noël">
+                                        <span class="item__beanies__number">01</span>
+                                    </div>
+                                    <p class="item__text">Je ne lâche rien, peu importe le problème !</p>
+                                </li>
+                                <li class="infos__table__reasons__list__item item">
+                                    <div class="item__beanies">
+                                        <img class="item__beanies__img imgR" src="./images/img/beanie-reversed-2cee141987.png" alt="Image de bonnet de Noël">
+                                        <span class="item__beanies__number">02</span>
+                                    </div>
+                                    <p class="item__text">Je travaille sans compter !</p>
+                                </li>
+                                <li class="infos__table__reasons__list__item item">
+                                    <div class="item__beanies">
+                                        <img class="item__beanies__img" src="./images/img/beanie-894949e20f.png" alt="Image de bonnet de Noël">
+                                        <span class="item__beanies__number">03</span>
+                                    </div>
+                                    <p class="item__text">Je suis très curieux d'apprendre</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="infos__table__nailsBottom">
+                            <img src="./images/img/nail-5aaad23142.png" srcset="./images/img/nail-5aaad23142.png" alt="Image représentant un clou planté." width="14"
+                                 height="16">
+                            <img src="./images/img/nail-5aaad23142.png" srcset="./images/img/nail-5aaad23142.png" alt="Image représentant un clou planté." width="14"
+                                 height="16">
+                        </div>
+                    </div>
+                    <div class="infos__table__plank">
+                        <img src="./images/img/wood_socle@2x-e9ba3d187c.png" alt="Image de socle en bois">
                     </div>
                 </div>
             </section>
@@ -471,7 +494,7 @@
                     <li class="ftInfos__ul__item" itemprop="addressLocality"><span itemprop="postalCode">4141</span> Sprimont</li>
                     <li class="ftInfos__ul__item">T.: <span itemprop="telephone">+32 494 39 11 09</span></li>
                 </ul>
-                <a href="mailto:justinmassart@outlook.com" class="ftInfos__mail" itemprop="email">justinmassart@outlook.com</a>
+                <a href="mailto:justinmassart@outlook.com" class="ftInfos__mail"><span itemprop="email">justinmassart@outlook.com</span></a>
                 <div class="nav__nailsBottom">
                     <img src="./images/img/nail-5aaad23142.png" srcset="./images/img/nail-5aaad23142.png" alt="Image représentant un clou planté." width="14"
                          height="16">

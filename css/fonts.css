@@ -9,6 +9,15 @@
 }
 
 @font-face {
+    font-family: 'ArcherProLight';
+    src: url('../fonts/archerpro_light-webfont.woff2') format('woff2'),
+    url('../fonts/archerpro_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'BlockGothicRR  2';
     src: url('../fonts/BlockGothicRR-Regular7.woff2') format('woff2'),
     url('../fonts/BlockGothicRR-Regular7.woff') format('woff'),
