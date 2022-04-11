@@ -40,9 +40,9 @@ body {
 }
 
 .background-wrapper-landscape {
-  display: flex;
   position: absolute;
-  width: 599px;
+  min-width: 100vw;
+  max-width: 599px;
   height: 600px;
   left: 50%;
   top: 50px;
@@ -134,7 +134,7 @@ body {
 .infos__table {
   position: relative;
   max-width: 90%;
-  margin: 0 auto 100px;
+  margin: 0 auto 125px;
   background: 0 50px/800px 480px repeat-y url("../images/img/text01@2x-65513b81ec.jpg");
   z-index: -1;
   color: #50352A;
@@ -163,7 +163,7 @@ body {
   min-width: 80px;
   position: absolute;
   bottom: -30px;
-  right: -30px;
+  right: -23px;
   z-index: -1;
 }
 .infos__table__contentWrapper:before {
@@ -256,6 +256,41 @@ body {
   padding-left: 35px;
   font-style: italic;
   opacity: 0.8;
+}
+
+.futur {
+  max-width: 90%;
+  margin: 0 auto;
+  color: #50352A;
+}
+.futur__pictures img:first-of-type {
+  display: none;
+}
+.futur__pictures {
+  max-width: 100%;
+  padding-bottom: 52px;
+}
+.futur__pictures img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border: 6px solid white;
+  box-sizing: border-box;
+}
+.futur__job__title {
+  font-size: 50px;
+}
+.futur__job__desc {
+  display: none;
+}
+.futur .btn__button {
+  border: none;
+  color: #FFF;
+  letter-spacing: 1px;
+  padding: 20px 33px;
+  font-size: 24px;
+  text-transform: uppercase;
+  background-color: #C23732;
 }
 
 /*# sourceMappingURL=index.css.map */

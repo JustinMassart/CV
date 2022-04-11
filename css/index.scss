@@ -53,9 +53,9 @@ body {
 }
 
 .background-wrapper-landscape {
-  display: flex;
   position: absolute;
-  width: 599px;
+  min-width: 100vw;
+  max-width: 599px;
   height: 600px;
   left: 50%;
   top: 50px;
@@ -168,7 +168,7 @@ body {
   &__table {
     position: relative;
     max-width: 90%;
-    margin: 0 auto 100px;
+    margin: 0 auto 125px;
     background: 0 50px / 800px 480px repeat-y url('../images/img/text01@2x-65513b81ec.jpg');
     z-index: -1;
     color: $lightBrown;
@@ -200,7 +200,7 @@ body {
     min-width: 80px;
     position: absolute;
     bottom: -30px;
-    right: -30px;
+    right: -23px;
     z-index: -1;
   }
 
@@ -318,6 +318,53 @@ body {
       opacity: 0.8;
     }
   }
+
+}
+
+.futur {
+  max-width: 90%;
+  margin: 0 auto;
+  color: $lightBrown;
+
+  &__pictures img:first-of-type {
+    display: none;
+  }
+
+  &__pictures {
+    max-width: 100%;
+    padding-bottom: 52px;
+  }
+
+  &__pictures img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 6px solid white;
+    box-sizing: border-box;
+  }
+
+  &__job__title {
+    font-size: 50px;
+  }
+
+  &__job__desc {
+    display: none;
+  }
+
+  .btn {
+
+    &__button {
+      border: none;
+      color: $white;
+      letter-spacing: 1px;
+      padding: 20px 33px;
+      font-size: 24px;
+      text-transform: uppercase;
+      background-color: $assetsRed;
+    }
+
+  }
+
 
 }
 
