@@ -44,7 +44,7 @@ img {
 body {
   max-width: 100vw;
   margin: 0 auto;
-  background-color: grey;
+  background: -100% -50% / 800px 500px repeat url("../images/img/paper@2x-3965dd6727.jpg");
 }
 
 .hd_link, .ft_link {
@@ -60,9 +60,8 @@ body {
   left: 50%;
   top: 50px;
   transform: translateX(-50%);
-  background: url('../images/img/background-bad0d796cd.jpg') no-repeat;
-  background-size: cover;
   z-index: -1;
+  background: 20% 0 / cover url('../images/img/background-bad0d796cd.jpg') no-repeat;
 }
 
 // HEADER
@@ -188,8 +187,8 @@ body {
     min-height: 32px;
     min-width: 80px;
     position: absolute;
-    bottom: -30px;
-    left: -30px;
+    bottom: -32px;
+    left: -20px;
     z-index: -1;
   }
 
@@ -200,22 +199,23 @@ body {
     min-width: 80px;
     position: absolute;
     bottom: -30px;
-    right: -23px;
+    right: -20px;
     z-index: -1;
   }
 
   &__table__contentWrapper:before {
     content: '';
-    background: 0 0 / 180% 75px repeat-x url('../images/img/paper-border-top-24b034bd97.png');
+    background: 0 0 / 599px 75px no-repeat url('../images/img/paper-border-top-24b034bd97.png');
     min-width: 100%;
-    min-height: 10px;
+    min-height: 75px;
     position: absolute;
     top: -10px;
+    z-index: -1;
   }
 
   &__table__contentWrapper:after {
     content: '';
-    background: 0 0 / 180% 75px repeat-x url('../images/img/paper-border-bottom-1684fa96a6.png');
+    background: 0 0 / 599px 75px repeat-x url('../images/img/paper-border-bottom-1684fa96a6.png');
     min-width: 100%;
     min-height: 75px;
     position: absolute;
@@ -223,7 +223,6 @@ body {
   }
 
   &__table__nailsTop {
-    z-index: 1;
     display: flex;
     padding: 0 10px;
     justify-content: space-between;
@@ -345,6 +344,7 @@ body {
 
   &__job__title {
     font-size: 50px;
+    padding-bottom: 36px;
   }
 
   &__job__desc {
@@ -352,8 +352,11 @@ body {
   }
 
   .btn {
+    margin-left: 20px;
 
     &__button {
+      text-decoration: none;
+      display: inline-block;
       border: none;
       color: $white;
       letter-spacing: 1px;
@@ -361,6 +364,85 @@ body {
       font-size: 24px;
       text-transform: uppercase;
       background-color: $assetsRed;
+      margin-bottom: 140px;
+      position: relative;
+    }
+
+    &__topBorder {
+      background: 0 0 / 293px 10px repeat-x url("../images/img/red_top@2x-3142fe3109.png");
+      min-width: 100%;
+      min-height: 20px;
+      position: absolute;
+      top: -10px;
+      left: 0;
+    }
+
+    &__bottomBorder {
+      background: 0 0 / 293px 10px repeat-x url("../images/img/red_bottom@2x-cca6a4c27a.png");
+      min-width: 100%;
+      min-height: 20px;
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+    }
+
+    &__leftBorder {
+      background: 0 0 / 20px 94px no-repeat url("../images/img/red_left@2x-e2def9bafc.png");
+      min-width: 20px;
+      min-height: 100%;
+      position: absolute;
+      left: -20px;
+      top: 0;
+    }
+
+    &__leftBorder:before {
+      content: "";
+      background: 0 0 / 30px 40px no-repeat url("../images/img/red_top_left@2x-8cf8100369.png");
+      min-width: 40px;
+      min-height: 40px;
+      position: absolute;
+      left: 0;
+      top: -14px;
+    }
+
+    &__leftBorder:after {
+      content: "";
+      background: 0 0 / 30px 40px no-repeat url("../images/img/red_bottom_left@2x-a2d2ef1c10.png");
+      min-width: 40px;
+      min-height: 40px;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+    }
+
+    &__rightBorder {
+      background: 0 0 / 20px 94px no-repeat url("../images/img/red_right@2x-a169e9794c.png");
+      min-width: 20px;
+      min-height: 100%;
+      position: absolute;
+      right: -20px;
+      top: 0;
+
+    }
+
+    &__rightBorder:before {
+      content: "";
+      background: 0 0 / 40px 40px no-repeat url("../images/img/red_top_right@2x-9a146dada2.png");
+      min-width: 40px;
+      min-height: 40px;
+      position: absolute;
+      right: 0;
+      top: -14px;
+    }
+
+    &__rightBorder:after {
+      content: "";
+      background: 0 0 / 40px 40px no-repeat url("../images/img/red_bottom_right@2x-2ac15eb419.png");
+      min-width: 40px;
+      min-height: 40px;
+      position: absolute;
+      right: 0;
+      bottom: -10px;
     }
 
   }
